@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Timo Leinich - Cybersecurity and Enterprise Architect. Professional experience, skills, education, and certifications.">
+  <meta name="color-scheme" content="dark light">
+  <title>Timo Leinich | Curriculum Vitae</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f3f4f5;
+      --muted: #b0bdc8;
+      --accent: #d3b15b;
+      --line: #314352;
+      --paper: #0d1c29;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 15px/1.6 "Segoe UI", Arial, sans-serif;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .cv {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 56px 32px;
+      background: var(--paper);
+    }
+    header { padding-bottom: 48px; border-bottom: 1px solid var(--line); }
+    .navigation { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+    .brand { color: var(--ink); font: 600 23px/1.2 Georgia, "Times New Roman", serif; text-decoration: none; }
+    .brand span { display: block; margin-top: 7px; color: var(--accent); font: 11px/1.4 "Segoe UI", Arial, sans-serif; letter-spacing: .2em; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; font-size: 13px; }
+    nav a { text-decoration: none; color: var(--muted); }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); align-items: end; gap: 60px; padding: 88px 0 48px; }
+    h1 { margin: 0; font: 500 clamp(48px, 6.5vw, 86px)/1.05 Georgia, "Times New Roman", serif; letter-spacing: -.035em; }
+    .title { margin: 23px 0 0; font: 400 clamp(25px, 3vw, 36px)/1.25 Georgia, "Times New Roman", serif; color: var(--accent); }
+    .subtitle { margin: 21px 0 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
+    .hero-note { border-top: 1px solid var(--accent); padding-top: 24px; color: var(--muted); }
+    .hero-note strong { display: block; color: var(--ink); font: 400 26px/1.3 Georgia, "Times New Roman", serif; margin-bottom: 14px; }
+    .hero-note p { margin: 0; }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+    .button { display: inline-block; padding: 13px 22px; border: 1px solid var(--accent); font-weight: 600; text-decoration: none; }
+    .button.primary { background: var(--accent); color: #0d1c29; }
+    .button:hover { background: #ecd18c; border-color: #ecd18c; color: #0d1c29; }
+    address { display: flex; flex-wrap: wrap; gap: 5px 22px; margin-top: 21px; font-size: 14px; font-style: normal; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 245px; gap: 64px; }
+    h2 { margin: 42px 0 24px; font: 400 32px/1.2 Georgia, "Times New Roman", serif; letter-spacing: -.015em; }
+    h3 { margin: 0; font-size: 18px; line-height: 1.4; font-weight: 600; }
+    p { margin: 9px 0; }
+    .profile { margin-top: 0; padding: 4px 0 32px; border-bottom: 1px solid var(--line); }
+    .profile p { max-width: 73ch; color: var(--muted); font-size: 17px; }
+    .job { padding: 28px 0; border-top: 1px solid var(--line); }
+    .job:first-of-type { padding-top: 0; border-top: 0; }
+    .company { margin: 3px 0 0; font-weight: 600; color: var(--accent); }
+    .meta { margin: 3px 0 8px; color: var(--muted); font-size: 13px; }
+    ul { padding-left: 19px; margin: 9px 0 0; }
+    li { margin: 8px 0; padding-left: 2px; }
+    .job li { color: var(--muted); }
+    aside { font-size: 14px; }
+    aside section + section { padding-top: 1px; }
+    aside h2 { font-size: 25px; }
+    .plain-list { list-style: none; padding: 0; }
+    .plain-list li { padding: 0; margin: 0 0 10px; }
+    .detail { display: block; color: var(--muted); font-size: 13px; }
+    .education + .education { margin-top: 19px; }
+    .education h3 { font-size: 14px; }
+    footer { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 14px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 760px) {
+      .cv { margin: 0; padding: 0 24px 24px; }
+      .navigation { align-items: flex-start; padding: 22px 0; gap: 20px; }
+      .brand { font-size: 20px; }
+      nav { gap: 10px 16px; justify-content: flex-end; max-width: 170px; }
+      .hero { grid-template-columns: minmax(0, 1fr); padding: 48px 0 28px; gap: 36px; }
+      .hero-note strong { font-size: 23px; }
+      h2 { font-size: 29px; }
+      .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      aside { border-top: 1px solid var(--line); margin-top: 20px; }
+      address { flex-direction: column; gap: 7px; }
+    }
+    @media (max-width: 480px) {
+      .navigation { flex-direction: column; }
+      nav { max-width: none; justify-content: flex-start; }
+      .actions { flex-direction: column; align-items: flex-start; }
+    }
+    @page { size: A4; margin: 16mm; }
+    @media print {
+      :root { color-scheme: light; --ink: #172d3a; --muted: #465b68; --accent: #205b71; --line: #cdd7dc; --paper: #fff; }
+      body { background: white; font-size: 10pt; line-height: 1.42; }
+      .cv { max-width: none; margin: 0; padding: 0; }
+      header { padding-bottom: 15px; }
+      .navigation, .actions, .hero-note { display: none; }
+      .hero { display: block; padding: 0; }
+      h1 { font-size: 31pt; }
+      .title { font-size: 14pt; margin-top: 12px; }
+      .subtitle, address { font-size: 9pt; }
+      .subtitle { margin-top: 8px; }
+      address { margin-top: 12px; gap: 3px 14px; }
+      .layout { grid-template-columns: minmax(0, 1fr) 48mm; gap: 8mm; }
+      .profile { margin-top: 18px; }
+      .profile { border: 0; padding: 0; }
+      .profile p { font-size: 10pt; }
+      h2 { margin-top: 20px; font-size: 12pt; break-after: avoid; }
+      h3 { font-size: 10.5pt; break-after: avoid; }
+      .job { padding: 12px 0; break-inside: avoid; }
+      aside { border: 0; margin-top: 0; }
+      aside h2 { font-size: 12pt; }
+      .meta, .detail { font-size: 8.5pt; }
+      aside { font-size: 9pt; }
+      aside section, .education { break-inside: avoid; }
+      .education h3 { font-size: 9pt; }
+      a { color: inherit; text-decoration: none; }
+      p, li { orphans: 3; widows: 3; }
+      footer { font-size: 8pt; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Self-contained CV based on the supplied LinkedIn PDF. Copy is condensed
+       for readability; employment dates and achievements follow that source.
+       Plain HTML with embedded CSS; no external assets, scripts, or tracking. -->
+  <main class="cv">
+    <header id="top">
+      <div class="navigation">
+        <a class="brand" href="#top">Timo Leinich<span>Cybersecurity &amp; Architecture</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#profile-heading">About</a>
+          <a href="#experience-heading">Experience</a>
+          <a href="#expertise-heading">Expertise</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="hero">
+        <div>
+          <h1>Timo Leinich</h1>
+          <p class="title">Cybersecurity &amp;<br>Enterprise Architect</p>
+          <p class="subtitle">Cloud security &middot; Strategic consulting &middot; Customer advocacy</p>
+          <div class="actions">
+            <a class="button primary" href="mailto:timo.leinich@gmail.com">Get in touch &rarr;</a>
+            <a class="button" href="#experience-heading">Explore my experience</a>
+          </div>
+        </div>
+        <div class="hero-note">
+          <strong>Modernization.<br>Security. Resilience.</strong>
+          <p>Helping enterprises strengthen cloud security and modernize without business disruption.</p>
+          <p class="meta" style="margin-top: 18px">Cloud Security Architect at Microsoft<br>Enterprise customers across EMEA</p>
+        </div>
+      </div>
+      <address id="contact" aria-label="Contact details">
+        <span>Germany</span>
+        <a href="mailto:timo.leinich@gmail.com">timo.leinich@gmail.com</a>
+        <a href="https://www.linkedin.com/in/timoleinich/">linkedin.com/in/timoleinich</a>
+        <a href="https://about.me/timo.leinich">about.me/timo.leinich</a>
+      </address>
+    </header>
+
+    <section class="profile" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Profile</h2>
+      <p>Cybersecurity and cloud security specialist with a career spanning enterprise IT operations, architecture, strategic consulting, and technical leadership. Expertise in Microsoft Security technologies, advanced threat detection, and Zero Trust architecture. Translates complex security challenges into practical strategies that strengthen cyber resilience and support modernization without business disruption.</p>
+    </section>
+
+    <div class="layout">
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Professional experience</h2>
+
+        <article class="job">
+          <h3>Cloud Security Architect</h3>
+          <p class="company">Microsoft</p>
+          <p class="meta"><time datetime="2026">2026</time> &ndash; Present &middot; EMEA</p>
+          <ul>
+            <li>Support enterprise customers across EMEA in protecting their environments with Microsoft Defender solutions.</li>
+            <li>Threat Protection Lead for GD across EMEA.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Rollout Manager</h3>
+          <p class="company">Semperis</p>
+          <p class="meta"><time datetime="2025">2025</time></p>
+          <ul>
+            <li>Led the worldwide rollout of an Active Directory disaster recovery and auditing solution, aligning implementation with customer requirements and compliance goals.</li>
+            <li>Managed stakeholders and supported adoption and customer satisfaction throughout the rollout.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Transition Manager</h3>
+          <p class="company">SoftwareOne</p>
+          <p class="meta"><time datetime="2025">2025</time> &middot; Germany</p>
+          <ul>
+            <li>Planned and executed the transition of Volkswagen VDI IT services from the previous managed service provider to SoftwareOne.</li>
+            <li>Coordinated technical and operational stakeholders, scope, timelines, risks, and dependencies.</li>
+            <li>Ensured documentation, knowledge transfer, and operational readiness before handover to steady-state operations.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Cloud Security Advisor | Customer Success</h3>
+          <p class="company">BlueVoyant</p>
+          <p class="meta"><time datetime="2022">2022</time> &ndash; <time datetime="2025">2025</time> &middot; Germany</p>
+          <ul>
+            <li>Managed approximately &euro;7M in annual recurring revenue and developed a new service offering informed by customer insights.</li>
+            <li>Created a comprehensive learning plan and taught the Zero Trust framework to 60 employees, including onboarding five new hires.</li>
+            <li>Advanced user-based response actions and led the transition for the company's largest DACH client, earning exceptional client feedback.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Technical Specialist | Security</h3>
+          <p class="company">Microsoft</p>
+          <p class="meta"><time datetime="2020">2020</time> &ndash; <time datetime="2022">2022</time> &middot; Stuttgart, Germany</p>
+          <ul>
+            <li>Secured the first Identity Governance (IGAM) deal in EMEA for FY22 and the largest E5 deal in EMEA for FY23.</li>
+            <li>Enabled the DACH Technical Specialist community through comprehensive identity security training.</li>
+            <li>Consistently exceeded commitments, earning a promotion while strengthening strategic customer partnerships.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Senior Premier Field Engineer</h3>
+          <p class="company">Microsoft</p>
+          <p class="meta"><time datetime="2016">2016</time> &ndash; <time datetime="2020">2020</time> &middot; Stuttgart region, Germany</p>
+          <ul>
+            <li>Helped organizations worldwide harden infrastructure and improve security resilience, including contributions to the Microsoft CISO Workshop.</li>
+            <li>Modernized legacy assessments into an on-demand approach supporting continuous optimization of customer workloads and services.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Principal Managed Services</h3>
+          <p class="company">COMPAREX AG</p>
+          <p class="meta"><time datetime="2013">2013</time> &ndash; <time datetime="2016">2016</time> &middot; Munich, Germany</p>
+          <ul>
+            <li>Helped establish the Managed Services department and transform the company's positioning into a full-service managed service provider.</li>
+            <li>Led service transitions and customer partnerships, with leadership impacting 100 engineers and approximately &euro;12M in annual recurring revenue.</li>
+            <li>As Lead Operations Architect for automotive customers, led transitions of Windows Server, VMware, Hyper-V, and endpoint protection services.</li>
+            <li>Implemented Microsoft System Center Operations Manager monitoring; owned service-level agreements for server, storage, and workplace server services.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Lead Managed Service IT Specialist</h3>
+          <p class="company">COMPAREX AG</p>
+          <p class="meta"><time datetime="2010">2010</time> &ndash; <time datetime="2013">2013</time> &middot; Munich, Germany</p>
+          <ul>
+            <li>Provided third-level support for a global automotive customer's Windows Server infrastructure and operated global web services.</li>
+            <li>Delivered cloud service proofs of concept and operated corporate McAfee services with Host Intrusion Prevention.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Managed Services IT Specialist</h3>
+          <p class="company">COMPAREX AG</p>
+          <p class="meta"><time datetime="2009">2009</time> &ndash; <time datetime="2010">2010</time> &middot; Munich metropolitan area, Germany</p>
+          <ul>
+            <li>Operated enterprise Active Directory and Exchange infrastructure for the German automotive sector.</li>
+            <li>Remediated Active Directory risks identified through Microsoft Risk Assessment Programs and monitored services with System Center Operations Manager.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>IT Support Specialist</h3>
+          <p class="company">Continental</p>
+          <p class="meta"><time datetime="2003">2003</time> &ndash; <time datetime="2009">2009</time> &middot; Villingen-Schwenningen, Germany</p>
+          <ul>
+            <li>Improved help desk KPIs, ticket handling, and user experience, contributing to the support operation's worldwide top-three ranking.</li>
+            <li>Supported Windows client pilots, end-user devices, VIP users, and local IT operations.</li>
+          </ul>
+        </article>
+      </section>
+
+      <aside aria-label="Skills, qualifications, and education">
+        <section aria-labelledby="expertise-heading">
+          <h2 id="expertise-heading">Expertise</h2>
+          <ul class="plain-list">
+            <li>Cloud &amp; enterprise security</li>
+            <li>Microsoft Defender</li>
+            <li>Microsoft Entra ID</li>
+            <li>Zero Trust architecture</li>
+            <li>Identity &amp; Active Directory</li>
+            <li>Advanced threat detection</li>
+            <li>Disaster recovery</li>
+            <li>Stakeholder management</li>
+            <li>Service transition &amp; rollout</li>
+            <li>Customer success</li>
+            <li>Technical leadership &amp; training</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <div class="education">
+            <h3>Hans-Kraut-Gewerbeschule</h3>
+            <p>Fachinformatiker Systemintegration<span class="detail">Information technology</span><span class="detail"><time datetime="2002">2002</time> &ndash; <time datetime="2004">2004</time></span></p>
+          </div>
+          <div class="education">
+            <h3>David-W&uuml;rth-Schule</h3>
+            <p>Kaufmann f&uuml;r B&uuml;rokommunikation<span class="detail">Business studies</span><span class="detail"><time datetime="1999">1999</time> &ndash; <time datetime="2002">2002</time></span></p>
+          </div>
+        </section>
+
+        <section aria-labelledby="certifications-heading">
+          <h2 id="certifications-heading">Certifications</h2>
+          <ul class="plain-list">
+            <li>Microsoft Certified Trainer<span class="detail">Microsoft</span></li>
+            <li>Microsoft Certified Solutions Expert: Cloud Platform and Infrastructure (Charter)<span class="detail">Microsoft</span></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="awards-heading">
+          <h2 id="awards-heading">Selected awards</h2>
+          <ul class="plain-list">
+            <li>BetterTogether Award<span class="detail">Microsoft &middot; 2019</span></li>
+            <li>Peak Performer Award<span class="detail">Microsoft &middot; 2017 &amp; 2018</span></li>
+            <li>COMPAREX TOP 100<span class="detail">COMPAREX AG &middot; 2015 &amp; 2016</span></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="languages-heading">
+          <h2 id="languages-heading">Languages</h2>
+          <ul class="plain-list">
+            <li>German<span class="detail">Native or bilingual proficiency</span></li>
+            <li>English<span class="detail">Full professional proficiency</span></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <footer>Timo Leinich &middot; Curriculum Vitae &middot; <a href="https://www.linkedin.com/in/timoleinich/">LinkedIn profile</a></footer>
+  </main>
+</body>
+</html>
